@@ -1,0 +1,13 @@
+img {
+  max-width: 100%;
+}
+
+h1 {
+  color: palevioletred;
+  top: 80%;
+  left: 60%;
+}
+
+body {
+  background-color: rgba(204, 112, 216, 0.63);
+}
