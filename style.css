@@ -4,10 +4,54 @@ img {
 
 h1 {
   color: palevioletred;
-  top: 80%;
-  left: 60%;
+  font-family: "Holtwood One SC", serif;
+}
+
+h2 {
+  color: rgb(219, 210, 200);
+  font-family: "Amatic SC", cursive;
+  font-size: 3rem;
 }
 
 body {
   background-color: rgba(204, 112, 216, 0.63);
+}
+
+nav a:visited {
+  color: rgb(255, 255, 255);
+}
+
+nav .links a {
+  text-decoration: none;
+  font-family: "Amatic SC", cursive;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+}
+
+header {
+  top: 0;
+  padding: 1rem 1rem;
+  gap: 20px;
+  position: sticky;
+}
+
+header nav ul {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0;
+  gap: 30px;
+  overflow-x: auto;
+  background-color: rgba(204, 112, 216, 0.63);
+  opacity: 50%;
+}
+
+#splash {
+  width: 100%;
+  background-image: url("billeder/header\ første\ forsøg.jpg");
+  background-size: cover;
+  aspect-ratio: 16/9;
 }
