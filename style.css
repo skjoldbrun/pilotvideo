@@ -1,16 +1,31 @@
+body {
+  padding: 20px;
+  /* margin: 50px; */
+}
+
 img {
   max-width: 100%;
 }
 
 h1 {
-  color: palevioletred;
+  color: rgb(207, 61, 117);
   font-family: "Holtwood One SC", serif;
+  font-size: 3em;
 }
 
 h2 {
   color: rgb(219, 210, 200);
   font-family: "Amatic SC", cursive;
-  font-size: 3rem;
+  font-size: 5em;
+  display: inline;
+}
+
+h3 {
+  color: rgb(219, 210, 200);
+  font-family: "Amatic SC", cursive;
+  font-size: 3em;
+  text-align: center;
+  display: inline;
 }
 
 body {
@@ -30,7 +45,7 @@ nav .links a {
 
 header {
   top: 0;
-  padding: 1rem 1rem;
+  padding: 10px;
   gap: 20px;
   position: sticky;
 }
@@ -49,9 +64,67 @@ header nav ul {
   opacity: 50%;
 }
 
-#splash {
+/* #splashtext {
+  grid-column: 1;
+  grid-row: 2;
+} */
+
+#splash_container #splashtext {
+  grid-column: 3;
+  grid-row: 6;
+  text-align: end;
+}
+
+#splash_container {
   width: 100%;
   background-image: url("billeder/header\ første\ forsøg.jpg");
   background-size: cover;
   aspect-ratio: 16/9;
+  gap: 20px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr 1fr));
+  grid-template-rows: 1fr 1fr;
+}
+
+video {
+  aspect-ratio: 16/9;
+  width: 100%;
+  padding-top: 30px;
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+
+  aspect-ratio: 16 / 9;
+}
+
+p {
+  color: rgb(219, 210, 200);
+}
+
+#first_section {
+  text-align: center;
+}
+
+#first_textwrapper {
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#first_text {
+  grid-column: 1;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+}
+
+.gallery img {
+  height: 100%;
+  object-fit: cover;
 }
