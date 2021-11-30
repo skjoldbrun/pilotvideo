@@ -102,6 +102,7 @@ iframe {
 
 p {
   color: rgb(219, 210, 200);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 #first_section {
@@ -116,6 +117,10 @@ p {
 
 #first_text {
   grid-column: 1;
+}
+
+#first_gallery {
+  grid-column: 2;
 }
 
 .gallery {
